@@ -1,0 +1,467 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app="JintaiJewelryApp">
+<head>
+    <title>Jintai Jewelry Group</title>
+
+    <link href="Library/foundation/css/normalize.css" rel="stylesheet" />
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Jintai Jewelry Group is mainly engaged in production, processing and distribution of jewelries including silver decorations, jewelry, silver, gold, rings, bracelet, necklace, anklets, bangle, toe ring, Gem,   silver ring, semi precious, precious stone, jade, cubic zirconia, crystal, pearl, marcasite">
+    <meta name="keywords" content="jewelry, silver, brass, rings, bracelet, necklace, anklets, bangle, Gem, Gemstone, Jintai, Thailand, จินไท้ จิถวน,จินไท้, เครื่องประดับ, เครื่องประดับเงิน">
+    <meta name="robots" content="index,follow">
+
+
+
+    <script src="Scripts/holder.min.js"></script>
+    <link href="Content/TimeLine.css" rel="stylesheet" />
+    <link href="Content/Site4.css" rel="stylesheet" />
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC' rel='stylesheet' type='text/css'>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body ng-controller="defaultCtrl">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 hidden visible-sm visible-md visible-lg" style="margin-bottom:10px;">
+                    <div class="text text-center">
+                        <a href="#/" id="top">
+                            <img src="Image/Logo_resize2.png" height="64" />
+                            <h2 class="text-logo" style="margin-top:0; color:#f1efe0;">
+                                Jintai Jewelry Group
+                            </h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-default" id="myAffix" data-spy="affix" style="z-index:9999;">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a id="logo" class="navbar-brand hidden visible-xs" href="#">
+                                <img src="Image/Logo_resize.png" class="img-responsive pull-left" width="20" alt="Jintai Jewelry Group" style="margin-right:0.5em;" />
+                                <span class="text-logo">Jintai Jewelry Group</span>
+                            </a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li ng-repeat="item in items" ng-class="{active: isActive(item)}">
+                                    <a ng-href="#{{item.path}}">
+                                        <font size="2" class="hidden visible-xs"><i class="{{item.icon}}"></i></font>
+                                        <span ng-bind-template="{{item.title}}"></span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!--
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-globe fa-2x hidden visible-xs pull-left"></i> Langular
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Eng</a></li>
+                                            <li><a href="#">Thai</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            -->
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+        </div> <!-- nav bar -->
+    </header> <!-- end header -->
+
+    <div ng-view class="container">
+        &nbsp;
+    </div> <!-- end content #section-views -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <hr class="clearfix" />
+
+                <div class="col-md-12 clear-padding-left">
+
+                    <div class="row">
+
+                        <div class="col-xs-6 col-sm-6 col-md-4">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="media">
+                                        <a href="#/" target="_top">
+                                            <div class="media-left media-middle">
+                                                <img class="media-object" src="Image/Logo_resize2.png" height="64" alt="...">
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading" style="margin-top:1.5em;">Jintai Jewelry Group</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>&nbsp;</li>
+
+                                <li class="font-Raleway" title="Header Join Our Community" style="padding-bottom:5px;">
+                                    <strong>Join Our Community:</strong>
+                                </li>
+                                <li title="Details Join Our Community">
+                                    <ul class="list-inline">
+                                        <li>
+                                            <a href="mailto:jlien@jintaijewelry.com" data-toggle="tooltip" data-placement="bottom" title="Email"><i class="fa fa-envelope-o fa-2x"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.facebook.com/jintaifamily" target="_new" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook fa-2x"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://plus.google.com/107373558516280756796/about?hl=th" target="_new" data-toggle="tooltip" data-placement="bottom" title="Google Plus"><i class="fa fa-google-plus fa-2x"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/Jintai_Official" target="_new" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter fa-2x"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://instagram.com/jintaijewelry_official/" target="_new" data-toggle="tooltip" data-placement="bottom" title="Instragram"><i class="fa fa-instagram fa-2x"></i></a>
+                                        </li>
+                                        <li>
+                                            <img src="image/Line_Icon.png" width="38" class="lazy" style="" title="Line id" data-toggle="modal" data-target="#LineId" />
+
+                                        </li>
+                                    </ul>
+                                </li> <!-- end Join Our Community-->
+
+                                <li>&nbsp;</li>
+
+                                <li class="font-Raleway" title="Header Association" style="padding-bottom:5px;">
+                                    <strong>Association:</strong>
+                                </li>
+                                <li title="Details Association">
+                                    <ul class="list-inline clear-padding-right">
+                                        <li data-toggle="tooltip" data-placement="bottom" title="GJPCT">
+                                            <a href="http://www.thaigemjewelry.or.th/?lang=en" target="_new">
+                                                <img src="Image/Association_Jewelry/GJPCT-Logore.jpg" width="75" data-src="holder.js/64x64" class="img-thumbnail img-responsive lazy" alt="" />
+                                            </a>
+                                        </li> <!-- GJPCT -->
+                                        <li data-toggle="tooltip" data-placement="bottom" title="Thai Silver Exporters Association">
+                                            <a href="http://www.thaisilver.or.th/" target="_new">
+                                                <img src="Image/Association_Jewelry/Thai_Silver_Exporters_Association-Logo-1.png" data-src="holder.js/64x64" class="img-thumbnail img-responsive lazy" alt="Thai Silver Exporters Association" style="max-height:52px; min-height:14px;" />
+                                            </a>
+                                        </li> <!-- Thai Silver Exporters Association -->
+                                    </ul>
+
+                                <li>&nbsp;</li>
+
+                                <li class="font-Raleway" title="Header Association" style="padding-bottom:5px;">
+                                    <strong>Certification:</strong>
+                                </li>
+                                <li title="Details Certification">
+                                    <ul class="list-inline clear-padding-right">
+                                        <li data-toggle="tooltip" data-placement="bottom" title="Bureau Veritas">
+                                            <img src="Image/Cert/Bureau_Veritas_logo_resize.jpg" data-src="holder.js/64x64" class="img-thumbnail img-responsive lazy Certification" alt="" style="margin-top:0;" />
+                                        </li> <!-- Bureau Veritas -->
+
+                                        <li data-toggle="tooltip" data-placement="bottom" title="CTPAT Master">
+                                            <img src="Image/Cert/CTPAT_Master_Logo_resize.jpg" data-src="holder.js/64x64" class="img-thumbnail img-responsive lazy Certification" alt="" style="margin-top:0;" />
+                                        </li> <!-- CTPAT Master -->
+
+                                        <li data-toggle="tooltip" data-placement="bottom" title="UL Mark">
+                                            <img src="Image/Cert/152px-UL_Mark_resize.png" data-src="holder.js/64x64" class="img-thumbnail img-responsive lazy Certification" alt="" style="margin-top:0;" />
+                                        </li> <!-- UL Mark -->
+
+                                        <li data-toggle="tooltip" data-placement="bottom" title="Omega Compliance">
+                                            <img src="Image/Cert/omega_resize.jpg" data-src="holder.js/64x64" class="img-thumbnail img-responsive lazy Certification" alt="" />
+
+                                        </li> <!-- Omega Compliance -->
+
+                                        <li data-toggle="tooltip" data-placement="bottom" title="Walmart">
+                                            <img src="Image/Cert/walmart_resize.jpg" data-src="holder.js/64x64" class="img-thumbnail img-responsive lazy Certification" alt="" />
+                                        </li> <!-- Walmart -->
+
+                                        <li data-toggle="tooltip" data-placement="bottom" title="Walt Disney">
+                                            <img src="Image/Cert/walt-disney-co-resize.jpg" data-src="holder.js/64x64" class="img-thumbnail img-responsive lazy Certification" alt="" />
+                                            </a>
+                                        </li> <!-- Walt Disney -->
+                                    </ul>
+                                </li> <!-- end Association -->
+                            </ul>
+                        </div><!-- end column 1-->
+
+                        <div class="col-xs-6 col-sm-6 col-md-4">
+                            <ul class="list-unstyled">
+                                <li title="Header About Us">
+                                    <strong>
+                                        <a href="#/About_Us" ng-click="link('#/About_Us')" target="_top">About Us:</a>
+                                    </strong>
+                                </li>
+                                <li title="Details About Us">
+                                    <ul>
+                                        <li><a target="_top" href="#/About_Us">Overview</a></li>
+                                        <li><a target="_top" href="#/About_Us">History of Jintai</a></li>
+                                        <li><a target="_top" href="#/About_Us">Vision</a></li>
+                                        <li><a target="_top" href="#/About_Us">Mission</a></li>
+                                    </ul>
+                                </li> <!-- end About Us -->
+
+                                <li>&nbsp;</li>
+
+                                <li title="Header Product">
+                                    <strong>
+                                        <a href="#/Product" target="_top">
+                                            Product:
+                                        </a>
+                                    </strong>
+                                </li>
+                                <li title="Details Product">
+                                    <ul>
+                                        <li>
+                                            <a target="_top"
+                                               title="Pearl and Mother of pearl Jewelry"
+                                               href="#/Product">
+                                                Pearl and Mother of pearl Jewelry
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_top"
+                                               title="Mix metal Jewelry"
+                                               href="#/Product">
+                                                Mix metal Jewelry
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_top"
+                                               title="Cubic Zirconia/Glass Jewelry"
+                                               href="#/Product">
+                                                Cubic Zirconia/Glass Jewelry
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_top"
+                                               title="Plain Silver"
+                                               href="#/Product">
+                                                Plain Silver
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_top"
+                                               title="Enamel and Resin Jewelry"
+                                               href="#/Product">
+                                                Enamel and Resin Jewelry
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_top"
+                                               title="Men's Jewelry"
+                                               href="#/Product">
+                                                Men's Jewelry
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_top"
+                                               title="Gemstone and Semi-Precious Jewelry"
+                                               href="#/Product">
+                                                Gemstone and Semi-Precious Jewelry
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_top"
+                                               title="Diamond Accent Jewelry"
+                                               href="#/Product">
+                                                Diamond Accent Jewelry
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_top"
+                                               title="Patina brass Jewelry"
+                                               href="#/Product">
+                                                Patina brass Jewelry
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_top"
+                                               title="Opaque Stone Jewelry"
+                                               href="#/Product">
+                                                Opaque Stone Jewelry
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li> <!-- end Product -->
+                            </ul>
+                        </div> <!-- end column 2 -->
+
+                        <div class="col-xs-6 col-sm-6 col-md-4">
+                            <ul class="list-unstyled">
+
+                                <li title="Header fair Information">
+                                    <strong>
+                                        <a target="_top" href="#/Fair_Information">Fair Information:</a>
+                                    </strong>
+                                </li>
+                                <li title="Details fair information">
+                                    <ul>
+                                        <li>
+                                            <a target="_top" href="#/Fair_Information">
+                                                News Information Fair
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_top" href="#/Fair_Information">
+                                                History is Fair Information
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li> <!-- end Fair Information -->
+
+                                <li>&nbsp;</li>
+
+                                <li title="Header Our Service">
+                                    <strong><a target="_top" href="#/Our_Service">Our Service:</a></strong>
+                                </li>
+                                <li title="Details Our Service">
+                                    <ul>
+                                        <li>
+                                            <a target="_top" title="Product Developement" href="#/Our_Service">
+                                                Product Developement
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_top" title="Customer Service" href="#/Our_Service">
+                                                Customer Service
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_top" title="Quality Assurance and International Auditing" href="#/Our_Service">
+                                                Quality Assurance and International Auditing
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li><!-- end Our Service -->
+                            </ul>
+                        </div> <!-- end column 3-->
+
+                        <div class="col-xs-6 col-sm-6 col-md-4">
+                            <ul class="list-unstyled">
+                                <li title="Header contact us">
+                                    <strong>
+                                        <a href="#/Contact_Us" target="_self">
+                                            Contact Us:
+                                        </a>
+                                    </strong>
+                                </li>
+                                <li title="Details contact us">
+                                    <ul class="list-unstyled">
+                                        <li style="padding-bottom:5px;">9 Ramkhamhaeng Rd., Huamark, Bangkapi, Bkk. 10240.</li>
+                                        <li style="padding-bottom:5px;">TEL: (66) 02-374-9766, 1073, 9419</li>
+                                        <li style="padding-bottom:5px;">FAX: (66) 02-374-7511, 02-732-0556</li>
+                                        <li style="padding-bottom:5px;">Email: <a href="mailto:jlien@jintaijewelry.com">jlien@jintaijewelry.com</a></li>
+                                        <li style="padding-bottom:5px;">Website: <a href="/" target="_top">http://www.jintaijewelry.com</a></li>
+                                        <li style="padding-bottom:5px;">Map: <a href="/Image/Map/Jintai_map_en.jpg" download="/Image/Map/Jintai_map_en.jpg">Click here download map</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div> <!-- end column 4 -->
+
+                    </div>
+
+                </div>
+
+                <div class="clearfix">
+                    <hr />
+                </div> <!-- clear fix -->
+
+                <div title="Header copyright">
+                    <div class="col-md-12 clear-padding-left" style="letter-spacing:0;">
+                        <div class="text text-center">
+                            <tt>
+                                <i class="fa fa-copyright"></i>
+                                2015 <a href="#/"><u>Jintai Jewelry Group</u></a> All Rights Reserved. For more information feel free to <a href="#/Contact_Us"><u>Contact Us</u></a>
+                            </tt>
+                            <span class="pull-right">
+                                <a href="#Careers" target="_new" class="">
+                                    <i class="fa fa-user"></i>&nbsp;
+                                    JOBS
+                                </a>
+                                |
+                                <a href="http://202.57.134.194" target="_new" class="">
+                                    <i class="fa fa-sign-in"></i>&nbsp;
+                                    Login
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div> <!-- end copyright -->
+
+            </div> <!-- end row -->
+        </div> <!-- end container -->
+    </footer> <!-- end footer -->
+
+    <div class="modal fade" id="LineId" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h1 class="modal-title" id="myModalLabel" style="color:#000;">Line ID: JintaiJewelry</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="text text-center">
+                        <img src="Image/QrCode_Line.png" class="lazy img-thumbnail img-responsive" alt="Alternate Text" />
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/jquery.lazyload.min.js"></script>
+
+    <script src="Scripts/bootstrap.min.js"></script>
+
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="App_Script/angularjs/app.js"></script>
+    <script src="App_Script/angularjs/controller.js"></script>
+
+    <!--<script src="App_Script/ScriptJS.js"></script>-->
+
+    <script>
+        $(document).ready(function () {
+            $("img.lazy").lazyload();
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+
+        $('#myAffix').affix({
+            offset: {
+                top: 128
+                //bottom: function () {
+                //    return (this.bottom = $('.footer').outerHeight(true))
+                //}
+            },
+
+        }).css({ 'top': '0' });
+    </script>
+</body>
+</html>

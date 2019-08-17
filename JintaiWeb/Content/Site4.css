@@ -1,0 +1,195 @@
+﻿body {
+    padding-top: 10px;
+    padding-bottom: 16px;
+    background-color: #333;
+    color: #f1efe0;
+    letter-spacing: 2px;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    /*font-family: 'Raleway', sans-serif;*/
+    /*font-weight: bolder;*/
+}
+
+
+a {
+    color: #f1efe0;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #c3bfa1;
+        text-decoration: none;
+    }
+
+.font-color {
+    color: #666;
+}
+
+.clear-padding-left {
+    padding-left: 0;
+}
+
+.clear-padding-right {
+    padding-right: 0;
+}
+
+.clear-padding-left-right {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+footer {
+    padding-bottom: 10px;
+}
+
+.container {
+    /*background-color: #FFF;*/
+    /*border:1px solid #000;*/
+}
+
+.font-Raleway {
+    font-family: 'Raleway', serif;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.text-logo {
+    font-family: 'Raleway', sans-serif;
+}
+
+.border-all {
+    border: 1px solid #666;
+}
+
+#google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    /* This is the aspect ratio height: 0;*/
+    border: 1px solid #000000;
+    overflow: hidden;
+}
+
+    #google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+.Certification {
+    max-height: 61px;
+    margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    #Bureau_Veritas_logo {
+        max-height: 177px;
+    }
+
+    #UL_Mark {
+        max-height: 76px;
+    }
+
+    .Certification {
+        max-height: 45px;
+    }
+
+    #LineId {
+        margin-top: 7%;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .product-image {
+        max-height: 235px;
+    }
+
+    .nav {
+        font-size: 80%;
+    }
+
+    .vision-image {
+        max-height: 300px;
+    }
+
+    #Bureau_Veritas_logo {
+        max-height: 190px;
+    }
+
+    #UL_Mark {
+        max-height: 80px;
+    }
+
+    .Certification {
+        max-height: 55px;
+        margin-top: 1em;
+    }
+
+    #LineId {
+        margin-top: 7%;
+    }
+}
+
+@media (min-width: 992px) {
+    #Bureau_Veritas_logo {
+        max-height: 200px;
+    }
+
+    #UL_Mark {
+        min-height: 100px;
+        max-height: 132px;
+    }
+
+    .product-image {
+        max-height: 500px;
+    }
+
+    .nav {
+        font-size: 100%;
+    }
+
+    .Certification {
+        max-height: 51px;
+    }
+
+    #LineId {
+        margin-top: 2%;
+    }
+}

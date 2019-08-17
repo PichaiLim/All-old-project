@@ -1,0 +1,133 @@
+﻿body {
+    padding-top: 1em;
+    padding-bottom: 0;
+    
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+footer {
+    padding-bottom: 10px;
+}
+
+.container{
+    background-color: #FFF;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#text-logo{
+    font-family: 'IM Fell Great Primer SC', serif;
+}
+
+* html footer {
+    margin-top: 1em;
+}
+
+*:first-child + html footer {
+    margin-top: 1em;
+}
+
+html > body footer {
+    margin-top: 1em;
+}
+
+html > /**/ body footer {
+    margin-top: 1em;
+}
+
+.border-all {
+    border: 1px solid #000;
+}
+
+.font-im{
+    font-family: 'IM Fell Great Primer SC', serif;
+}
+
+nav {
+    font-weight:bold;
+    font-family: 'IM Fell Great Primer SC', serif;
+    margin-top: 1em;
+    background-color:#14283b;
+}
+
+li > a {
+    color: white;
+    font-weight: bold;
+}
+
+    li > a:hover {
+        font-weight:bold;
+        color:#000;
+        background-color: #365671;
+    }
+
+a[id="home"] {
+    border-bottom: 0.5em solid #66b3db;
+}
+
+a[id="about_us"] {
+    border-bottom: 0.5em solid #aca685;
+}
+
+a[id="fair_information"] {
+    border-bottom: 0.5em solid #87ac78;
+}
+
+a[id="branches"] {
+    border-bottom: 0.5em solid #c17f50;
+}
+
+a[id="product"] {
+    border-bottom: 0.5em solid #c35bb5;
+}
+
+a[id="contact_us"] {
+    border-bottom: 0.5em solid #7ba55d;
+}
+
+.line-bottom {
+    border-bottom: 1px solid #808080;
+}
+
+.thumbnail-none-boder {
+    border: hidden;
+}
+
+#company-image {
+    max-width: 300px;
+    max-height: 200px;
+    min-width: 250px;
+}
+
+#google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    // This is the aspect ratio height: 0;    
+    border:1px solid #000000;
+    overflow: hidden;
+}
+
+    #google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }

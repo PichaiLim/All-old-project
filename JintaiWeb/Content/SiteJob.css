@@ -1,0 +1,161 @@
+﻿body {
+    background-color: #dddddd;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    background-color: #252c34;
+    padding-top: 0.5em;
+    border-right-width: 0;
+    border-left-width: 0;
+}
+
+.navbar-default {
+    border-radius: 0;
+    background-image: linear-gradient(to bottom,#252c34 0,#252c34 100%);
+    border-top: 2px solid #455669;
+    border-bottom: 2px solid #455669;
+}
+
+    .navbar-default .navbar-brand {
+        color: #FFF;
+    }
+
+        .navbar-default .navbar-brand:hover {
+            color: #FFF;
+        }
+
+    .navbar-default .navbar-nav > li > a {
+        color: #aeaeae;
+    }
+
+        .navbar-default .navbar-nav > li > a:hover {
+            color: #FFF;
+        }
+
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {
+        background-image: none;
+        border-bottom: 3px solid #2b73c3;
+    }
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #dddddd;
+        text-decoration: none;
+    }
+
+    a:link {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+#social-contact {
+    background-color: #292d35;
+    color: #ffffff;
+    padding: 1% 0 0.2% 0;
+}
+
+#contact {
+    font-family: sans-serif;
+    padding-top: 0.6%;
+}
+
+
+
+
+.debug {
+    border: 1px solid #000000;
+}
+
+.list-inline > li {
+    margin: 0;
+    padding: 0;
+}
+
+    .list-inline > li > a {
+        color: #ffffff;
+    }
+
+        .list-inline > li > a:hover {
+            color: #aaaaaa;
+        }
+
+#google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    /* This is the aspect ratio height: 0;*/
+    border: 1px solid #000000;
+    overflow: hidden;
+}
+
+    #google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+.list-group-item-hover:hover {
+    background-color: #dff0d8;
+    text-decoration: underline;
+}
+
+.bg-default {
+    background-color: #999;
+    color: #fff;
+}
+
+.panel-title {
+    font-weight: bolder;
+}
+
+.panel-title-link:link {
+    color: #000;
+}
+
+.panel-footer-link:link {
+    color: #92acb9;
+}
+
+
+.panel-footer-link-register:link {
+    color: #319cd5;
+}
+
+.panel-footer-link-register:visited {
+    color: #319cd5;
+}
+
+.panel-footer-link-register:hover {
+    color: #92acb9;
+}
+
+.panel-footer-link-register:active {
+    color: #92acb9;
+}
+
+
+.contact-link:link {
+    color: #319cd5;
+}
+
+.contact-link:visited {
+    color: #319cd5;
+}
+
+.contact-link:hover {
+    color: #92acb9;
+}
+
+.contact-link:active {
+    color: #92acb9;
+}
